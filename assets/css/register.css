@@ -1,0 +1,149 @@
+body{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8be8cf), color-stop(100%,#cdeb8b));
+}
+.container {
+    width: 50%;
+    padding: 30px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+}
+
+.btn-cancel {
+    margin-right: 10px;
+}
+
+#form-1 {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    border: 2px solid ;
+    background-color: #fff;
+}
+
+#form-1 h1 {
+    margin-bottom: 10px;
+}
+
+#form-1 .form-control {
+    border-radius: 0;
+}
+
+#form-1 textarea {
+    resize: none;
+}
+
+#form-1 button {
+    border-radius: 0;
+    width: 120px;
+}
+
+#form-1 button.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+#form-1 button.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+#form-1 button.btn-cancel {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+#form-1 button.btn-cancel:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+/* ======= Toast message ======== */
+#toast {
+    position: fixed;
+    top: 440px;
+    right: 32px;
+    z-index: 999999;
+}
+
+.toast {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 10px 0;
+    min-width: 300px;
+    max-width: 350px;
+    border-color: #ff623d;
+    border-left: 4px solid red;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+    transition: all linear 0.3s;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(calc(100% + 32px));
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.toast--success {
+    border-color: #47d864;
+}
+
+.toast--success .toast__icons {
+    color: #47d864;
+}
+/* .toast--error {
+    border-color: #ff623d;
+} */
+
+.toast--error .toast__icon {
+    color: #ff623d;
+    border-color: #ff623d;
+}
+
+.toast+.toast {
+    margin-top: 24px;
+}
+.toast__icon, .toast__icons {
+    font-size: 29px;
+}
+
+.toast__icon,.toast__icons,
+.toast__close {
+    padding: 0 16px;
+}
+
+.toast__body {
+    flex-grow: 1;
+}
+
+.toast__title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.toast__msg {
+    font-size: 14px;
+    color: #888;
+    margin-top: 6px;
+    line-height: 1.5;
+}

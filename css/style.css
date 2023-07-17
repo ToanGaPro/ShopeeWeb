@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #222;
+    font: 400 15px arial;
+}
+.top-header {
+    padding: 8.5px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.section {
+    width: 100%;
+    float: left;
+}
+.container {
+    width: 100%;
+    max-width: 1130px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+}
+.logo {
+    display: inline-block;
+    padding-top: 2px;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    outline: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+.time-now:before {
+    content: "";
+    width: 1px;
+    height: 26px;
+    background: #e5e5e5;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+.time-now {
+    font-size: 14px;
+    line-height: 32px;
+    color: #757575;
+    position: relative;
+    margin-left: 20px;
+    padding-left: 15px;
+    float: left;
+}
+.top-header .right {
+    align-items: center;
+}
+.btn24hqua, .evne {
+    height: 32px;
+    line-height: 30px;
+    padding: 0;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #757575;
+    display: inline-block;
+}
+.btn24hqua .ic {
+    fill: #bdbdbd;
+}
+.btn24hqua .ic, .evne .ic {
+    margin-right: 5px;
+    margin-top: -1px;
+}
+.top-header .news-area {
+    margin-top: -2px;
+}
+.news-area {
+    position: relative;
+    display: inline-block;
+    margin-left: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 8px 0;
+}
+.news-area .txt-area {
+    display: flex;
+    align-items: center;
+    color: #757575;
+    font-size: 14px;
+    position: relative;
+}
+.news-area svg {
+    margin-right: 5px;
+}
+.wrap-main-nav {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.main-nav {
+    width: 100%;
+    float: left;
+    clear: both;
+    font-size: 14px;
+    overflow: hidden;
+    border-bottom: 1px solid #e5e5e5;
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.7,1,.7,1);
+}
+.main-nav .parent {
+    justify-content: space-between;
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.main-nav .parent li.home {
+    padding: 12px 0;
+}
+.main-nav .parent li {
+    margin-right: 15px;
+    position: relative;
+    font-weight: 600;
+    color: #4f4f4f;
+    transition-duration: 200ms;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(.7,1,.7,1);
+}
+.main-nav .parent li.newlest {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    padding-right: 0;
+    margin-right: 0;
+    transition-duration: 200ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.7,1,.7,1);
+}
